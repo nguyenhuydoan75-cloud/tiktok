@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How it works — Doan Nguyen Auto Post</title>
+<meta name="description" content="Step-by-step: how Doan Nguyen Auto Post prepares and publishes the owner's science videos to TikTok using Login Kit and the Content Posting API.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+  <span class="logo"><span class="dot">DN</span> Doan Nguyen Auto Post</span>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="on" href="how-it-works.html">How it works</a>
+    <a href="videos.html">Videos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div></header>
+
+<section><div class="wrap">
+  <h2>The publishing pipeline, end to end</h2>
+  <p style="max-width:760px;color:var(--mut)">The tool runs on the owner's own computer. It combines a content-preparation stage (done in advance, with human review) and a publishing stage (via TikTok's official APIs). Here is the complete flow:</p>
+
+  <div style="margin-top:26px">
+    <div class="step"><div class="n">1</div><div><h3>One-time authorization (Login Kit)</h3><p>The owner opens the TikTok authorization page, signs in to his own account @.doannguyenpro and grants the scopes <em>user.info.basic</em>, <em>video.upload</em> and <em>video.publish</em>. The tool stores the resulting token locally on the owner's computer only. Authorization can be revoked anytime in TikTok settings.</p></div></div>
+    <div class="step"><div class="n">2</div><div><h3>Content creation & review</h3><p>The owner records and edits original 50–90 second science videos (vertical 9:16). For each video he prepares and reviews a caption: one hook line plus relevant hashtags. Nothing is generated or posted without the owner having seen it.</p></div></div>
+    <div class="step"><div class="n">3</div><div><h3>Automatic preparation</h3><p>Before upload, each video is validated (format, orientation, duration) and re-encoded to H.264/AAC at TikTok-friendly bitrate and size. A local ledger records every published file so no video is ever posted twice.</p></div></div>
+    <div class="step"><div class="n">4</div><div><h3>Account confirmation</h3><p>At posting time the tool calls the Creator Info endpoint to display the account's nickname and privacy options, confirming it is posting to the correct, authorized profile with the right privacy level.</p></div></div>
+    <div class="step"><div class="n">5</div><div><h3>Direct post (Content Posting API)</h3><p>The tool initializes the upload (<em>video/init</em>), transfers the file in a single chunk, and TikTok processes and publishes it to the owner's profile with the prepared caption. In draft mode (<em>video.upload</em>), the video instead lands in the owner's TikTok inbox for final editing in the app.</p></div></div>
+    <div class="step"><div class="n">6</div><div><h3>Status check & logging</h3><p>The tool polls the publish status until TikTok confirms success, then writes the result to a daily log. If anything fails, the video stays in the queue and the owner is notified.</p></div></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>Design principles</h2>
+  <div class="grid g3">
+    <div class="card"><h3>Human in the loop</h3><p>Captions and videos are prepared and approved by the owner before any automated step touches them.</p></div>
+    <div class="card"><h3>Official APIs only</h3><p>All communication goes through developers.tiktok.com endpoints. No web automation, no scraping, no unofficial clients.</p></div>
+    <div class="card"><h3>Minimal data</h3><p>Only the owner's open id, display name and avatar are read — solely to confirm the right account. See the <a href="privacy-policy.html">Privacy Policy</a>.</p></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap cols">
+  <span>© 2026 Doan Nguyen Auto Post · Personal project of Nguyễn Huy Đoàn</span>
+  <span><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a> · <a href="contact.html">Contact</a></span>
+</div></footer>
+</body>
+</html>

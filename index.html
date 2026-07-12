@@ -3,27 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Doan Nguyen Auto Post</title>
-<style>body{font-family:Arial,Helvetica,sans-serif;max-width:820px;margin:40px auto;padding:0 18px;line-height:1.6;color:#222}h1{font-size:30px}a{color:#1565c0}.box{background:#f5f7ff;border:1px solid #dfe6ff;border-radius:10px;padding:18px 22px;margin-top:24px}</style>
+<title>Doan Nguyen Auto Post — Publish science shorts to TikTok, safely and officially</title>
+<meta name="description" content="Doan Nguyen Auto Post is a personal publishing tool that posts the owner's original science & education short videos to his TikTok channel @.doannguyenpro using TikTok's official APIs.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Doan Nguyen Auto Post</h1>
-<p>Doan Nguyen Auto Post is a personal, single-user tool that helps its owner automatically publish his own short <strong>educational and science videos</strong> to his own TikTok account <strong>@.doannguyenpro</strong>, using TikTok's official Login Kit and Content Posting API.</p>
+<header><div class="wrap nav">
+  <span class="logo"><span class="dot">DN</span> Doan Nguyen Auto Post</span>
+  <nav>
+    <a class="on" href="index.html">Home</a>
+    <a href="how-it-works.html">How it works</a>
+    <a href="videos.html">Videos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div></header>
 
-<div class="box">
-<h2>What it does</h2>
-<ul>
-<li>Lets the owner authorize his own TikTok account via official OAuth.</li>
-<li>Uploads an MP4 video from the owner's computer.</li>
-<li>Publishes it as a Direct Post with a caption and hashtags.</li>
-</ul>
-<p>It is used only by the owner, for the owner's own content. It does not serve third parties.</p>
-</div>
+<div class="hero"><div class="wrap">
+  <h1>Original science shorts,<br>published the official way</h1>
+  <p>Doan Nguyen Auto Post is the publishing tool behind <strong>@.doannguyenpro</strong> — a Vietnamese science &amp; astronomy channel. It schedules and posts the owner's own short videos to his own TikTok profile through TikTok's official Login Kit and Content Posting API. Nothing more, nothing less.</p>
+  <a class="btn" href="how-it-works.html">See how it works</a>
+  <a class="btn ghost" href="videos.html">Watch the videos</a>
+</div></div>
 
-<p style="margin-top:28px">
-<a href="terms-of-service.html">Terms of Service</a> &nbsp;&middot;&nbsp;
-<a href="privacy-policy.html">Privacy Policy</a>
-</p>
-<p>Contact: nguyenhuydoan75@gmail.com</p>
+<section><div class="wrap">
+  <h2>What this tool does</h2>
+  <div class="grid g3">
+    <div class="card"><div class="ic">🔐</div><h3>Official authorization</h3><p>The channel owner signs in with TikTok Login Kit (OAuth). The tool never sees a password and access can be revoked from TikTok settings at any time.</p></div>
+    <div class="card"><div class="ic">🎬</div><h3>Owner's content only</h3><p>Every video is created by the channel owner — original Vietnamese narrations about space, physics and Earth science. The tool posts only to the owner's own profile.</p></div>
+    <div class="card"><div class="ic">🗓️</div><h3>Consistent schedule</h3><p>Two uploads per day at fixed times. The tool picks the next unpublished video from the owner's library, attaches the prepared caption and hashtags, and posts it.</p></div>
+    <div class="card"><div class="ic">✅</div><h3>Review before publish</h3><p>Captions and videos are prepared and reviewed by the owner in advance. A ledger guarantees the same video is never posted twice.</p></div>
+    <div class="card"><div class="ic">📦</div><h3>Smart preparation</h3><p>Videos are checked for 9:16 vertical format and compressed to TikTok-friendly size before upload, keeping quality while staying within API limits.</p></div>
+    <div class="card"><div class="ic">🚫</div><h3>What it does NOT do</h3><p>No posting for third parties, no scraping, no engagement automation, no comments/likes/follows. It is a single-user publishing pipeline.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>About the channel</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>@.doannguyenpro — science for everyone</h3>
+      <p>Short, carefully researched videos in Vietnamese about astronomy and physics: black holes, neutron stars, gravitational waves, the Casimir effect, interstellar visitors like ʻOumuamua, and what would happen to Earth in extreme scenarios. Each video is 50–90 seconds, vertical 9:16, narrated and edited by the owner.</p>
+    </div>
+    <div class="card">
+      <h3>Made by a teacher</h3>
+      <p>The channel is run by Nguyễn Huy Đoàn, a secondary-school teacher in Vietnam who turns classroom questions into bite-size science stories. The same videos are also published on the owner's YouTube Shorts channel.</p>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Integration at a glance</h2>
+  <table class="spec">
+    <tr><th>TikTok product</th><th>Purpose in this tool</th></tr>
+    <tr><td>Login Kit <em>(user.info.basic)</em></td><td>One-time OAuth authorization by the owner; display name and avatar are shown so the owner can confirm the right account before anything is posted.</td></tr>
+    <tr><td>Content Posting API <em>(video.publish)</em></td><td>Direct-posts a prepared, owner-approved video with its caption to the owner's own profile.</td></tr>
+    <tr><td>Content Posting API <em>(video.upload)</em></td><td>Fallback mode: uploads a video as a draft so the owner can finish publishing inside the TikTok app.</td></tr>
+  </table>
+</div></section>
+
+<footer><div class="wrap cols">
+  <span>© 2026 Doan Nguyen Auto Post · Personal project of Nguyễn Huy Đoàn</span>
+  <span><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a> · <a href="contact.html">Contact</a></span>
+</div></footer>
 </body>
 </html>
