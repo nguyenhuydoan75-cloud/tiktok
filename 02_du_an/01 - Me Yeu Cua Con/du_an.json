@@ -1,0 +1,12 @@
+{"ten":"Mẹ Yêu Của Con","so":"01","ti_le":"9:16","do_dai":60,"nhac_bat_dau":0,"cat_day":0.12,
+"canh":[
+{"so":1,"bat_dau":0,"ket_thuc":5,"loai":"khong_hat"},
+{"so":2,"bat_dau":5,"ket_thuc":10,"loai":"khong_hat"},
+{"so":3,"bat_dau":10,"ket_thuc":15,"loai":"hat"},
+{"so":4,"bat_dau":15,"ket_thuc":20,"loai":"khong_hat"},
+{"so":5,"bat_dau":20,"ket_thuc":25,"loai":"khong_hat"},
+{"so":6,"bat_dau":25,"ket_thuc":31,"loai":"hat"},
+{"so":7,"bat_dau":31,"ket_thuc":37,"loai":"khong_hat"},
+{"so":8,"bat_dau":37,"ket_thuc":43,"loai":"hat"},
+{"so":9,"bat_dau":43,"ket_thuc":50,"loai":"khong_hat"},
+{"so":10,"bat_dau":50,"ket_thuc":60,"loai":"hat"}]}
