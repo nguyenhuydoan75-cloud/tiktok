@@ -1,0 +1,27 @@
+{
+  "ten_bai": "Mẹ Yêu Của Con",
+  "so": 1,
+  "ty_le": "9:16",
+  "nhac": "nhac/bai_hat.mp3",
+  "nhac_bat_dau": 0,
+  "do_dai": 60,
+  "fps": 30,
+  "fade": 0.25,
+  "tieu_de_mo_dau": {"chu": "Mẹ Yêu Của Con", "phu": "Đoàn", "giay": 3},
+  "logo_chu": "Đoàn Music",
+  "phu_de": "phu_de.srt",
+  "thu_muc_thanh_pham": "../../03_thanh_pham",
+  "canh": [
+    {"so": 1,  "bat_dau": 0,    "ket_thuc": 6.7,  "loai": "khong_hat", "file": "clip/canh01.mp4", "cat_day": 0.12},
+    {"so": 2,  "bat_dau": 6.7,  "ket_thuc": 10,   "loai": "khong_hat", "file": "clip/canh02.mp4", "cat_day": 0.12},
+    {"so": 3,  "bat_dau": 10,   "ket_thuc": 13.3, "loai": "khong_hat", "file": "anh/canh03.png", "chuyen_dong": "zoom_out", "cat_day": 0.12},
+    {"so": 4,  "bat_dau": 13.3, "ket_thuc": 20,   "loai": "khong_hat", "file": "clip/canh04.mp4", "cat_day": 0.12},
+    {"so": 5,  "bat_dau": 20,   "ket_thuc": 26.7, "loai": "hat",       "file": "clip/canh05.mp4", "cat_day": 0.12},
+    {"so": 6,  "bat_dau": 26.7, "ket_thuc": 30,   "loai": "khong_hat", "file": "anh/canh06.png", "chuyen_dong": "pan_phai", "cat_day": 0.12},
+    {"so": 7,  "bat_dau": 30,   "ket_thuc": 33.3, "loai": "khong_hat", "file": "anh/canh07.png", "chuyen_dong": "zoom_in", "cat_day": 0.12},
+    {"so": 8,  "bat_dau": 33.3, "ket_thuc": 40,   "loai": "hat",       "file": "clip/canh08.mp4", "cat_day": 0.12},
+    {"so": 9,  "bat_dau": 40,   "ket_thuc": 46.7, "loai": "khong_hat", "file": "clip/canh09.mp4", "cat_day": 0.12},
+    {"so": 10, "bat_dau": 46.7, "ket_thuc": 53.3, "loai": "hat",       "file": "clip/canh10.mp4", "cat_day": 0.12},
+    {"so": 11, "bat_dau": 53.3, "ket_thuc": 60,   "loai": "khong_hat", "file": "clip/canh11.mp4", "cat_day": 0.12}
+  ]
+}
